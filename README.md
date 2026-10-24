@@ -1,31 +1,24 @@
-# VibeQuest — Mobile App Development
+# VibeQuest — Assignment 02
 
-A playful Expo / React Native mini-quest app for collecting small everyday wins.
+A simple Expo and React Native app with three bottom tabs:
 
-## What is included
+- **Home:** a daily positive activity.
+- **Tasks:** three small activities that can be marked complete.
+- **About:** a short description of the app.
 
-- **Vibe**: daily mood, quest shuffle animation, streak and XP cards.
-- **Quests**: six tap-to-complete missions, progress bar, XP totals and haptic feedback.
-- **Playbook**: quick ideas for making a regular day more fun.
-- Custom VibeQuest icon, adaptive Android icon and splash screen.
-- Shared themed components throughout the screens.
+The app uses shared `ThemedView` and `ThemedText` components and includes a custom app icon and splash screen.
 
-## Preview on Android
+## Run on Android
 
-1. Install **Expo Go** from Google Play.
-2. Install Node.js LTS on the computer and run `npm install` in this folder.
-3. Run `npx expo start --lan` and scan the terminal QR from Expo Go. Keep both devices on the same Wi-Fi.
+1. Install Expo Go on your Android phone.
+2. Install Node.js LTS on the computer.
+3. In this folder run `npm install`, then `npx expo start --lan`.
+4. Scan the QR code with Expo Go. Keep the computer and phone on the same Wi-Fi.
 
-## Build an installable APK
+## APK
 
-Install EAS CLI with `npm install -g eas-cli`, sign in with `eas login`, then run:
+An APK can be built with `eas build --platform android --profile production` after signing in to an Expo account.
 
-```sh
-eas build --platform android --profile production
-```
+## Source note
 
-The `production` profile is configured to produce an APK for direct installation.
-
-## Assignment context
-
-The supplied Assignment 01 and Assignment 02 PDFs did not include the original Expo source project. This app was reconstructed from the available assignment requirements, so it is a complete demo app but cannot be represented as a verified extension of the missing Assignment 01 source.
+The supplied assignment PDFs did not include the original Assignment 01 project folder. This clean, simple app was rebuilt from the available requirements.

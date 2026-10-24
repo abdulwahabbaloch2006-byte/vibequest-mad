@@ -48,3 +48,6 @@ export function View(props: ViewProps) {
 
   return <DefaultView style={[{ backgroundColor }, style]} {...otherProps} />;
 }
+
+export { Text as ThemedText, View as ThemedView };
+
