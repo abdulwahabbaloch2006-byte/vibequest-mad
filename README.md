@@ -1,24 +1,31 @@
-# BuildBuddy
+# VibeQuest — Mobile App Development
 
-BuildBuddy is a React Native Expo study planner prototype for the Mobile App Development assignment.
+A playful Expo / React Native mini-quest app for collecting small everyday wins.
 
-## Assignment 02 work
+## What is included
 
-- Added a third bottom tab, **Field Guide**, with a themed checklist screen.
-- Replaced the starter pages with Home and Explore content.
-- Used the shared `ThemedView` and `ThemedText` components throughout the screens.
-- Added a custom BuildBuddy app icon and splash image.
+- **Vibe**: daily mood, quest shuffle animation, streak and XP cards.
+- **Quests**: six tap-to-complete missions, progress bar, XP totals and haptic feedback.
+- **Playbook**: quick ideas for making a regular day more fun.
+- Custom VibeQuest icon, adaptive Android icon and splash screen.
+- Shared themed components throughout the screens.
 
-## Run on Android
+## Preview on Android
 
-1. Install Expo Go from Google Play.
-2. On this computer, run `npm install` and then `npx expo start --lan`.
-3. Open the Expo Go app and scan the QR code shown by Expo.
+1. Install **Expo Go** from Google Play.
+2. Install Node.js LTS on the computer and run `npm install` in this folder.
+3. Run `npx expo start --lan` and scan the terminal QR from Expo Go. Keep both devices on the same Wi-Fi.
 
-Keep the phone and computer on the same Wi-Fi network for the LAN preview.
+## Build an installable APK
 
-For an installable APK, sign in to Expo and run `npx eas-cli@latest build --platform android --profile production`.
+Install EAS CLI with `npm install -g eas-cli`, sign in with `eas login`, then run:
 
-## Important
+```sh
+eas build --platform android --profile production
+```
 
-The Assignment 01 project source was not included with the provided PDFs. This is a reconstructed prototype, so it cannot yet be verified as an extension of the student's original app. Replace this prototype with the original project before final submission if that source is available.
+The `production` profile is configured to produce an APK for direct installation.
+
+## Assignment context
+
+The supplied Assignment 01 and Assignment 02 PDFs did not include the original Expo source project. This app was reconstructed from the available assignment requirements, so it is a complete demo app but cannot be represented as a verified extension of the missing Assignment 01 source.

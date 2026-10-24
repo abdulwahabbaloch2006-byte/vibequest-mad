@@ -2,9 +2,7 @@ import { SymbolView } from 'expo-symbols';
 import { Tabs } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
-import Colors from '@/constants/Colors';
-
-const tint = Colors.light.tint;
+const tint = '#7b63d1';
 
 export default function TabLayout() {
   return (
@@ -12,7 +10,7 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: tint,
-        tabBarInactiveTintColor: '#9aa0ad',
+        tabBarInactiveTintColor: '#a09aae',
         tabBarStyle: styles.bar,
         tabBarLabelStyle: styles.label,
         tabBarItemStyle: styles.item,
@@ -20,22 +18,22 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Vibe',
           tabBarIcon: ({ color }) => <SymbolView name={{ ios: 'house.fill', android: 'home', web: 'home' }} tintColor={color} size={21} />,
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="quests"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <SymbolView name={{ ios: 'square.grid.2x2.fill', android: 'grid_view', web: 'grid_view' }} tintColor={color} size={21} />,
+          title: 'Quests',
+          tabBarIcon: ({ color }) => <SymbolView name={{ ios: 'sparkles', android: 'casino', web: 'casino' }} tintColor={color} size={21} />,
         }}
       />
       <Tabs.Screen
         name="guide"
         options={{
-          title: 'Field Guide',
-          tabBarIcon: ({ color }) => <SymbolView name={{ ios: 'sparkles', android: 'lightbulb', web: 'lightbulb' }} tintColor={color} size={21} />,
+          title: 'Playbook',
+          tabBarIcon: ({ color }) => <SymbolView name={{ ios: 'book.fill', android: 'menu_book', web: 'menu_book' }} tintColor={color} size={21} />,
         }}
       />
     </Tabs>
@@ -43,7 +41,7 @@ export default function TabLayout() {
 }
 
 const styles = StyleSheet.create({
-  bar: { height: 76, paddingTop: 8, paddingBottom: 8, backgroundColor: '#fff', borderTopWidth: 1, borderTopColor: '#edecf0', elevation: 0 },
+  bar: { height: 76, paddingTop: 8, paddingBottom: 8, backgroundColor: '#fff', borderTopWidth: 1, borderTopColor: '#eee8fa', elevation: 0 },
   label: { fontSize: 9, fontWeight: '700' },
   item: { paddingTop: 1 },
 });

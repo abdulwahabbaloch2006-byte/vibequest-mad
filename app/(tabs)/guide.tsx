@@ -1,68 +1,65 @@
 import { ScrollView, StyleSheet } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import { Text, View } from '@/components/Themed';
 
-const ink = '#101522';
-const muted = '#8590a3';
-const checklist = [
-  ['01', 'Start with one clear goal', 'Write what this screen should help someone do.'],
-  ['02', 'Use a familiar pattern', 'Keep navigation consistent across the whole app.'],
-  ['03', 'Make touch targets easy', 'Leave enough space between actions.'],
-  ['04', 'Check light and dark themes', 'Keep text readable in both color schemes.'],
+const steps = [
+  { icon: '🎲', title: 'Pick a tiny quest', detail: 'Choose something silly, kind, or curious.' },
+  { icon: '✨', title: 'Make it your own', detail: 'There is no wrong way to complete a good-vibes mission.' },
+  { icon: '🏅', title: 'Collect your XP', detail: 'Tap your quest when it is done and celebrate the win.' },
+  { icon: '🌈', title: 'Come back tomorrow', detail: 'A new day means a fresh chance to have fun.' },
 ];
 
 export default function GuideScreen() {
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-      <Text style={styles.eyebrow}>FIELD GUIDE · 04 MIN READ</Text>
-      <Text style={styles.title}>Before you ship</Text>
-      <Text style={styles.subtitle}>A quick checklist for a screen that feels finished.</Text>
+    <ScrollView style={styles.page} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+      <Text style={styles.kicker}>THE VIBEQUEST PLAYBOOK</Text>
+      <Text style={styles.title}>How to play<Text style={styles.titleDot}>?</Text></Text>
+      <Text style={styles.subtitle}>Four easy steps. Zero pressure. Maximum good vibes.</Text>
 
-      <View style={styles.banner}>
-        <View style={styles.bannerTop}><Text style={styles.bannerIcon}>✦</Text><Text style={styles.bannerTag}>BUILD BETTER</Text></View>
-        <Text style={styles.bannerTitle}>Details make the difference.</Text>
-        <Text style={styles.bannerCopy}>Check the small things before sharing your next build.</Text>
-        <View style={styles.bannerLine} />
-        <Text style={styles.bannerFooter}>MOBILE APP DEVELOPMENT</Text>
-      </View>
+      <LinearGradient colors={['#ffad89', '#ffd881']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.cover}>
+        <Text style={styles.coverEmoji}>🪩</Text>
+        <Text style={styles.coverTitle}>Make ordinary{ '\n' }days legendary.</Text>
+        <Text style={styles.coverSub}>YOUR MINI GUIDE TO A BRIGHTER DAY</Text>
+        <Text style={styles.coverSparkle}>✦</Text>
+      </LinearGradient>
 
-      <Text style={styles.section}>Your checklist</Text>
-      {checklist.map(([number, title, copy], index) => (
-        <View key={number} style={styles.step}>
-          <View style={[styles.stepNumber, index === 0 && styles.stepNumberActive]}><Text style={[styles.stepNumberText, index === 0 && styles.stepNumberTextActive]}>{number}</Text></View>
-          <View style={styles.stepBody}><Text style={styles.stepTitle}>{title}</Text><Text style={styles.stepCopy}>{copy}</Text></View>
+      <View style={styles.stepsHead}><Text style={styles.sectionTitle}>The whole game</Text><Text style={styles.badge}>EASY MODE</Text></View>
+      {steps.map((step, index) => (
+        <View key={step.title} style={styles.step}>
+          <View style={[styles.number, index === 0 && styles.numberActive]}><Text style={styles.numberText}>0{index + 1}</Text></View>
+          <View style={styles.stepBody}><Text style={styles.stepTitle}>{step.icon}  {step.title}</Text><Text style={styles.stepDetail}>{step.detail}</Text></View>
         </View>
       ))}
-      <View style={styles.note}><Text style={styles.noteIcon}>✓</Text><Text style={styles.noteText}>A consistent design system makes every new screen feel like part of the same app.</Text></View>
+      <View style={styles.mantra}><Text style={styles.mantraEmoji}>💜</Text><Text style={styles.mantraText}>Your only competition is yesterday-you.</Text></View>
       <View style={{ height: 18 }} />
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: '#f6f5f2' },
-  content: { paddingHorizontal: 22, paddingTop: 26, paddingBottom: 28 },
-  eyebrow: { color: '#8590a3', fontSize: 9, fontWeight: '800', letterSpacing: 1.4 },
-  title: { color: ink, fontSize: 29, fontWeight: '800', letterSpacing: -1, marginTop: 7 },
-  subtitle: { color: muted, fontSize: 13, lineHeight: 19, marginTop: 7, marginBottom: 20 },
-  banner: { backgroundColor: ink, borderRadius: 23, padding: 19, minHeight: 204, justifyContent: 'center' },
-  bannerTop: { flexDirection: 'row', alignItems: 'center', gap: 9, marginBottom: 17 },
-  bannerIcon: { color: '#b8a5ff', fontSize: 19 },
-  bannerTag: { color: '#c5baff', fontSize: 9, fontWeight: '800', letterSpacing: 1.5 },
-  bannerTitle: { color: '#fff', fontSize: 22, fontWeight: '800', letterSpacing: -0.5 },
-  bannerCopy: { color: '#bdc4d0', fontSize: 12, lineHeight: 18, marginTop: 7, maxWidth: 270 },
-  bannerLine: { height: 1, backgroundColor: '#303747', marginTop: 19, marginBottom: 11 },
-  bannerFooter: { color: '#8993a4', fontSize: 8, fontWeight: '800', letterSpacing: 1.3 },
-  section: { color: ink, fontSize: 17, fontWeight: '800', marginTop: 24, marginBottom: 8 },
-  step: { flexDirection: 'row', alignItems: 'flex-start', paddingVertical: 13, borderBottomColor: '#e7e6e2', borderBottomWidth: 1 },
-  stepNumber: { width: 32, height: 32, borderRadius: 11, backgroundColor: '#e9e7ef', alignItems: 'center', justifyContent: 'center' },
-  stepNumberActive: { backgroundColor: '#b8a5ff' },
-  stepNumberText: { color: '#716b82', fontSize: 9, fontWeight: '800' },
-  stepNumberTextActive: { color: '#342954' },
-  stepBody: { flex: 1, marginLeft: 12, paddingTop: 1 },
-  stepTitle: { color: ink, fontSize: 12, fontWeight: '800' },
-  stepCopy: { color: muted, fontSize: 10, lineHeight: 15, marginTop: 4 },
-  note: { flexDirection: 'row', alignItems: 'center', gap: 10, backgroundColor: '#def3e9', borderRadius: 17, padding: 14, marginTop: 17 },
-  noteIcon: { color: '#3d795e', fontSize: 17, fontWeight: '900' },
-  noteText: { flex: 1, color: '#315140', fontSize: 11, lineHeight: 16, fontWeight: '600' },
+  page: { flex: 1, backgroundColor: '#f7f4ff' },
+  content: { paddingHorizontal: 21, paddingTop: 25, paddingBottom: 24 },
+  kicker: { color: '#89839e', fontSize: 9, fontWeight: '900', letterSpacing: 1.5 },
+  title: { color: '#211c34', fontSize: 29, lineHeight: 36, fontWeight: '900', letterSpacing: -0.9, marginTop: 5 },
+  titleDot: { color: '#fa8c7b' },
+  subtitle: { color: '#858096', fontSize: 12, lineHeight: 18, marginTop: 5, marginBottom: 18 },
+  cover: { minHeight: 218, borderRadius: 24, padding: 20, justifyContent: 'center', overflow: 'hidden' },
+  coverEmoji: { fontSize: 34, marginBottom: 10 },
+  coverTitle: { color: '#382a44', fontSize: 25, lineHeight: 28, fontWeight: '900', letterSpacing: -0.7 },
+  coverSub: { color: '#7a5b5c', fontSize: 8, fontWeight: '900', letterSpacing: 1.1, marginTop: 13 },
+  coverSparkle: { position: 'absolute', color: '#fff7db', fontSize: 72, right: 14, top: 14 },
+  stepsHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 23, marginBottom: 8 },
+  sectionTitle: { color: '#211c34', fontSize: 16, fontWeight: '900' },
+  badge: { color: '#71688c', backgroundColor: '#eae4fb', overflow: 'hidden', borderRadius: 9, paddingHorizontal: 8, paddingVertical: 5, fontSize: 8, fontWeight: '900', letterSpacing: 0.8 },
+  step: { flexDirection: 'row', alignItems: 'center', paddingVertical: 13, borderBottomColor: '#ece7f5', borderBottomWidth: 1 },
+  number: { width: 37, height: 37, borderRadius: 13, backgroundColor: '#e9e4f4', alignItems: 'center', justifyContent: 'center' },
+  numberActive: { backgroundColor: '#c9b9ff' },
+  numberText: { color: '#655a84', fontSize: 9, fontWeight: '900' },
+  stepBody: { flex: 1, marginLeft: 12 },
+  stepTitle: { color: '#302941', fontSize: 11, fontWeight: '900' },
+  stepDetail: { color: '#89839b', fontSize: 9, lineHeight: 14, marginTop: 4 },
+  mantra: { flexDirection: 'row', alignItems: 'center', gap: 10, backgroundColor: '#eee8ff', borderRadius: 16, padding: 14, marginTop: 16 },
+  mantraEmoji: { fontSize: 18 },
+  mantraText: { color: '#5d5278', flex: 1, fontSize: 10, fontWeight: '800' },
 });

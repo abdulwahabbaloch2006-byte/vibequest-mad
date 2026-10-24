@@ -1,17 +1,17 @@
 {
   "expo": {
-    "name": "BuildBuddy",
-    "slug": "buildbuddy-mad",
+    "name": "VibeQuest",
+    "slug": "vibequest-mad",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "buildbuddymad",
+    "scheme": "vibequest",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "package": "com.abdulwahab.buildbuddy",
+      "package": "com.abdulwahab.vibequest",
       "adaptiveIcon": {
         "backgroundColor": "#101522",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
