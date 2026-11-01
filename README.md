@@ -1,12 +1,19 @@
-# VibeQuest — Assignment 02
+# VibeQuest — Assignment 03
 
-A simple Expo and React Native app with three bottom tabs:
+A simple Expo and React Native app with four bottom tabs:
 
 - **Home:** a daily positive activity.
-- **Tasks:** three small activities that can be marked complete.
+- **Tasks:** quests that can be added, edited, deleted, searched, filtered, and marked complete.
+- **Discover:** live ideas loaded from a public API.
 - **About:** a short description of the app.
 
-The app uses shared `ThemedView` and `ThemedText` components and includes a custom app icon and splash screen.
+The app continues the same Assignment 01/02 project and includes the original bottom tabs, custom app icon, and splash screen. Assignment 03 adds:
+
+- **My quests:** Create, read, edit, delete, mark complete, search, and filter quests by category.
+- **Local persistence:** Quest records are stored on-device with AsyncStorage and restored on launch.
+- **Discover:** Loads live JSON data with Axios GET from the free JSONPlaceholder public API. Loading, error, and retry states are included.
+
+Records are intentionally simple: title, optional note, category, and completion status. Starter quests appear only on first launch; later changes are saved locally.
 
 ## Run on Android
 
@@ -19,6 +26,10 @@ The app uses shared `ThemedView` and `ThemedText` components and includes a cust
 
 An APK can be built with `eas build --platform android --profile production` after signing in to an Expo account.
 
+## Assignment submission checklist
+
+After creating an APK, upload it to a file-hosting service and submit its accessible download link with your existing GitHub repository link. Capture screenshots of quest add/edit/delete, search/filter, saved data after reopening the app, the Discover API screen, and the expanded project tree in VS Code. These screenshots and hosted links require your device, GitHub, Expo, and LMS accounts.
+
 ## Source note
 
-The supplied assignment PDFs did not include the original Assignment 01 project folder. This clean, simple app was rebuilt from the available requirements.
+The project starts from the original VibeQuest Assignment 02 ZIP. Its Home, Tasks, and About tabs, themed components, app icon, and splash screen are retained; this assignment adds quest management and the Discover API tab. The provided assignment brief is titled “Assignment 02”; this README calls it Assignment 03 to match the user's sequence.
