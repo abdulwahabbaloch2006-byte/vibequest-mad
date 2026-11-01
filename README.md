@@ -33,3 +33,7 @@ After creating an APK, upload it to a file-hosting service and submit its access
 ## Source note
 
 The project starts from the original VibeQuest Assignment 02 ZIP. Its Home, Tasks, and About tabs, themed components, app icon, and splash screen are retained; this assignment adds quest management and the Discover API tab. The provided assignment brief is titled “Assignment 02”; this README calls it Assignment 03 to match the user's sequence.
+
+## Submission and demo
+
+See [SUBMISSION.md](SUBMISSION.md) for the required evidence, APK build steps, Google Classroom submission, and teacher demo sequence.
