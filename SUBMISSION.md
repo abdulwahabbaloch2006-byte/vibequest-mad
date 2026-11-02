@@ -76,7 +76,7 @@ Name: Abdul Wahab
 App: VibeQuest
 Assignment: CRUD Operations, Local Storage & API Integration
 GitHub: https://github.com/abdulwahabbaloch2006-byte/vibequest-mad
-Updated APK: [paste the real APK access link here]
+Updated APK: https://expo.dev/artifacts/eas/0citWAZVTYd7egGJSO8k7J0etYYOcoSTUTMz5b5XzI4.apk
 Attached: mobile feature screenshots and expanded VS Code project structure.
 ```
 
@@ -99,12 +99,22 @@ For a nontechnical explanation: "This app keeps everyday tasks in one place. You
 Do not mark the submission complete until all of these are actually done:
 
 - [x] Updated source visible in the existing GitHub repository.
-- [ ] Android APK build completed and downloaded.
+- [x] Android APK build completed and downloaded.
 - [ ] Installed APK tested on the phone, including icon and splash.
 - [ ] Required mobile screenshots captured.
-- [ ] Expanded VS Code folder screenshot captured.
-- [ ] APK uploaded and its access link checked.
+- [x] Expanded VS Code folder screenshot captured.
+- [x] APK uploaded and its access link checked.
 - [ ] Links and screenshots attached to the correct Classroom assignment.
 - [ ] Classroom shows the assignment as Turned in.
 
 The GitHub repository link has been attached to Assignment 03 in the MAD 4 A Google Classroom. This is a draft attachment, not a completed turn-in.
+
+## Verified APK build
+
+- EAS build ID: `fee530fb-5dab-4f49-b0c2-17672e4b4f85`.
+- Status: finished successfully, Android APK, version 1.0.0 (build 2).
+- Build page: https://expo.dev/accounts/abdulwahabbaloch2006/projects/vibequest-mad/builds/fee530fb-5dab-4f49-b0c2-17672e4b4f85
+- Download link: https://expo.dev/artifacts/eas/0citWAZVTYd7egGJSO8k7J0etYYOcoSTUTMz5b5XzI4.apk
+- Anonymous download returned HTTP 200. Downloaded size: 92,635,728 bytes. The archive contains AndroidManifest.xml and classes.dex.
+- Local installer: `D:\Mobile app deveolpment\VibeQuest-Assignment03.apk`.
+- Native device installation, splash/icon checks, and mobile feature screenshots are still pending. A successful build does not prove those device checks.

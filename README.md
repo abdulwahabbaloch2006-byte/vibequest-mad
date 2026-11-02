@@ -24,6 +24,8 @@ Records are intentionally simple: title, optional note, category, and completion
 
 ## APK
 
+[Download the updated Assignment 03 Android APK](https://expo.dev/artifacts/eas/0citWAZVTYd7egGJSO8k7J0etYYOcoSTUTMz5b5XzI4.apk).
+
 An APK can be built with `eas build --platform android --profile production` after signing in to an Expo account.
 
 ## Assignment submission checklist
