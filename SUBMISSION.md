@@ -106,9 +106,9 @@ Do not mark the submission complete until all of these are actually done:
 - [x] APK uploaded and its access link checked.
 - [x] GitHub link, APK download link, and three VS Code screenshots attached to the correct Classroom assignment.
 - [ ] Mobile feature screenshots attached to the assignment.
-- [ ] Classroom shows the assignment as Turned in.
+- [x] Classroom shows the assignment as Turned in.
 
-The GitHub repository link, APK download link, and three VS Code screenshots have been attached to Assignment 03 in the MAD 4 A Google Classroom. The assignment still shows Assigned. Mobile screenshots and final Turn in remain pending.
+Assignment 03 in MAD 4 A was turned in with six attachments: the GitHub repository link, APK download link, three VS Code screenshots, and the Discover web-preview screenshot. Classroom confirmed "Your assignment has been turned in". The user chose the available agent-created screenshots. Native phone screenshots and device checks were not provided and remain unverified.
 
 ## Verified APK build
 
