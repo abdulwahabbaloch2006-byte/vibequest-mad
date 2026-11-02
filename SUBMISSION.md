@@ -59,7 +59,7 @@ For the VS Code screenshot, expand `app/(tabs)`, `components`, `constants`, and 
 
 ## 4. Upload the APK and submit in Google Classroom
 
-1. Upload the completed `.apk` to a file-hosting service such as your Google Drive.
+1. Use the completed EAS APK artifact download link if it is accessible without signing in. Alternatively, upload the downloaded `.apk` to a file-hosting service such as your Google Drive.
 2. For that APK file only, choose General access > Anyone with the link > Viewer.
 3. Copy its download/access link. Open it in a private browser window to check that the teacher can access it without requesting permission.
 4. Open https://classroom.google.com/ and choose your Mobile App Development class.
@@ -98,7 +98,7 @@ For a nontechnical explanation: "This app keeps everyday tasks in one place. You
 
 Do not mark the submission complete until all of these are actually done:
 
-- [ ] Updated source visible in the existing GitHub repository.
+- [x] Updated source visible in the existing GitHub repository.
 - [ ] Android APK build completed and downloaded.
 - [ ] Installed APK tested on the phone, including icon and splash.
 - [ ] Required mobile screenshots captured.
@@ -106,3 +106,5 @@ Do not mark the submission complete until all of these are actually done:
 - [ ] APK uploaded and its access link checked.
 - [ ] Links and screenshots attached to the correct Classroom assignment.
 - [ ] Classroom shows the assignment as Turned in.
+
+The GitHub repository link has been attached to Assignment 03 in the MAD 4 A Google Classroom. This is a draft attachment, not a completed turn-in.
