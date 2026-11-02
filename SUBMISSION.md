@@ -69,7 +69,7 @@ For the VS Code screenshot, expand `app/(tabs)`, `components`, `constants`, and 
 
 The PDF requires the updated GitHub repository, APK link, expanded VS Code screenshot, and mobile feature screenshots. It does not request a public website deployment or Play Store publishing.
 
-Copy this text into the submission after replacing the APK placeholder:
+Use this text for the submission if needed:
 
 ```text
 Name: Abdul Wahab
@@ -104,10 +104,11 @@ Do not mark the submission complete until all of these are actually done:
 - [ ] Required mobile screenshots captured.
 - [x] Expanded VS Code folder screenshot captured.
 - [x] APK uploaded and its access link checked.
-- [ ] Links and screenshots attached to the correct Classroom assignment.
+- [x] GitHub link, APK download link, and three VS Code screenshots attached to the correct Classroom assignment.
+- [ ] Mobile feature screenshots attached to the assignment.
 - [ ] Classroom shows the assignment as Turned in.
 
-The GitHub repository link has been attached to Assignment 03 in the MAD 4 A Google Classroom. This is a draft attachment, not a completed turn-in.
+The GitHub repository link, APK download link, and three VS Code screenshots have been attached to Assignment 03 in the MAD 4 A Google Classroom. The assignment still shows Assigned. Mobile screenshots and final Turn in remain pending.
 
 ## Verified APK build
 
